@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h2 >{{driver.name}}</</h2></br>
+<img src= {{driver.image}} width=250, height=250>
+</br>
+<img src= {{driver.number_image}} width=125, height=125>
+<img src= {{driver.team_image}} width=125, height=125>
+<img src= {{driver.flag}} width=125, height=125>
+
+<h4 ><b>Fun Fact: </b>{{driver.fact}}</</h4>
+
+<h3 ><b>Number: </b>{{driver.number}}</</h3>
+
+<h3 ><b>Nationality: </b>{{driver.nationality}}</</h3>
+
+<h3 ><b>Team: </b>{{driver.team_name}}</</h3>
+
+<h3 ><b>Races: </b>{{driver.races}}</</h3>
+
+<h3 ><b>Podiums: </b>{{driver.podiums}}</</h3>
+
+<h3 ><b>Wins: </b>{{driver.wins}}</</h3>
+{% endblock %}
+
+<!--This is all the information displayed for the drivers with unique stats for each driver-->

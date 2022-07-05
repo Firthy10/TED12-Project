@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h2 >{{track.name}}</</h2></br>
+<img src= {{track.image}} width=300, height=200>
+<h3 >{{track.gp}}</</h3></br>
+<img src= {{track.flag}} width=200, height=150>
+
+<h4 ><b>Description: </b>{{track.description}}</</h4>
+
+<h4 ><b>Location: </b>{{track.location}}, {{track.country}}</</h4>
+
+<h4 ><b>Number of races: </b>{{track.races}}</</h4>
+
+<h4 ><b>First race: </b>{{track.built}}</</h4>
+
+<h4 ><b>Fastest Lap: </b>{{track.lap}}</</h4>
+
+{% endblock %}
+
+<!-- This is all the information displayed for the tracks with unique stats for each track -->

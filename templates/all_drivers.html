@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+{% for driver in drivers %}
+    <p><a href="/driver/{{ driver.id }}">{{ driver.name }}</a></p>
+{% endfor %}
+
+{% endblock %}
+<!--This shows a list of all the drivers on the page, You can click on one to find out more details about that particular driver.-->

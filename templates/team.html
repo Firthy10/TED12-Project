@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h2 >{{team.name}}</</h2></br>
+
+<h4 >Chief: {{team.chief}}</</h4>
+<h4 >HQ Location: {{team.hq}}</h4>
+<h4 >2021 Finish Position: {{team.position}}</h4>
+
+<img src= {{team.team_image}} width=250, height=250></br>
+<img src= {{team.car}} width=375, height=120>
+
+<h3 >Drivers: </h3>
+{% for driver in drivers %}
+  <li><a href="https://programming-assessment-samfirth1.ted21-ted33-2022.repl.co/driver/{{driver.id}}">{{driver.name}}</a></li>
+{% endfor %}
+
+{% endblock %}
+
+<!-- This is all the information displayed for the teams with unique stats for each team -->

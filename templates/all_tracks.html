@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+{% for track in tracks %}
+    <p><a href="/track/{{ track.id }}">{{ track.gp }}</a></p>
+{% endfor %}
+
+{% endblock %}
+<!--This shows a list of all the 2022 f1 race tracks by listing them in order of first to last with russia being on here because it was originaly on the list but know has been dropped.-->

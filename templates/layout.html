@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+ <head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+   <title>F1 Database - {{page_title}}</title> <!--> This shows that this is what displays on the top of tabs <!-->
+ </head>
+ <body>
+   {% include 'header.html' %}
+   {% include 'nav.html' %}
+   {% block content %}{% endblock %}
+   {% include 'footer.html' %}
+ </body>
+</html>
+
+<!-- This makes the page look good by telling where everything should go. -->

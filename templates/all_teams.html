@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+{% for team in teams %}
+    <p><a href="/team/{{ team.id }}">{{ team.name }}</a></p>
+{% endfor %}
+
+{% endblock %}
+<!--This shows a list of all the teams on the page, You can click on one to find out more details about that particular team.-->
