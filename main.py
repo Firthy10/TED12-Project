@@ -45,7 +45,7 @@ def all_drivers():
     drivers = models.driver.query.all()
     return render_template('all_drivers.html', page_title="All Drivers", drivers=drivers)
 
-#details of one driver Fail
+#details of one driver Fail, This is a copy of the details of one team but found it easier just to add the teams in the data base where you cant click on the team to take you too the team because it was easier to do it that way.
 '''@app.route('/driver/<int:id>')
 def drivers(id):
     driver = models.driver.query.filter_by(id=id).first()
